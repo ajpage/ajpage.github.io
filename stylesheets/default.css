@@ -48,10 +48,9 @@ main {
 
 figure > img {
 	display: inline-block;
-	height: 100px;
-	width: 100px;
+	height: 220px;
 	float: left;
-	margin-top: 80px;
+	margin-top: 20px;
 	margin-right: 20px;
 }
 
