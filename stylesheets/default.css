@@ -1,0 +1,36 @@
+header {
+	background-image: url("../imgs/white-wood.jpg");
+	margin: 0;
+	height: 10%;
+	width: 100%;
+}
+
+nav li {
+	display: inline-block;
+	padding-left: 15px;
+}
+
+ul {
+	margin-left: 50%;
+}
+
+body {
+	background-color: #f7f7f6;
+	margin: 0;
+	font-family: Lato, sans-serif;
+}
+
+main {
+	width: 66%;
+	margin: auto;
+}
+
+footer {
+	background-color: #dbdfe4;
+}
+
+.page-break {
+	height: 2px;
+	width: 100%;
+	background-color: #aeb0b4;
+}
