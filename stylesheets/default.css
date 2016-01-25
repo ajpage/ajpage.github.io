@@ -24,6 +24,19 @@ nav li {
 	font-size: 20px;
 }
 
+a:link {
+	color: #ff9966;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px solid aeb0b4;
+}
+
+a:visited {
+	color: #ff9966;	
+}
+
 #home {
 	color: #ff9966;
 }
