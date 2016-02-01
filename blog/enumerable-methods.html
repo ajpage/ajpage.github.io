@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Enumerable Methods</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+<header>
+  <!-- Site logo -->
+  <img src="../imgs/logo.png" alt="site logo">
+  <h1>JavaScript &amp; Donuts</h1>
+  <!-- Nav bar -->
+  <nav>
+    <ul>
+      <li id="home"><a href="#">Home</a></li>
+      <li id="portfolio"><a href="#">Portfolio</a></li>
+      <li id="resume"><a href="#">Resume</a></li>
+      <li id="blog"><a href="index.html">Blog</a></li>
+      <li id="contact"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Enumerable Methods<span>/ #map</span></h1>
+  <h4>January 31, 2016</h4>
+  <h4>Alyssa Page</h4>
+
+  <section>
+    <p>
+    A module in Ruby is a bunch of methods that have been packaged together. The Enumerable module is one that is accessible as long as the class that wants
+    to include it has its own #each method. This is because all enumerable methods are based off of #each and are used to traverse, search, sort and manipulate collections. 
+    </p>
+    <p>
+    One of the many available methods in enumerable is #map (or collect). Map allows you to transform a copy of an object without altering the original.
+    Say we have the array
+    <br>
+      <pre><code>
+        user_names = ["Harry", "Ron", "Ginny", "Hermione"]
+      </code></pre>
+      <br>
+      and we want to have a copy of this array with all the elements in uppercase. Using #map will allow you to transform a copy and still have the original copy unaltered for later use.
+      Since the array class has it's own each method the enumerable methods are accesible. <br>
+       <pre><code>
+        caps_names = user_names.map { |item| item.upcase }
+        puts user_names   --> Harry Ron Ginny Hermione
+        puts caps_names   --> HARRY RON GINNY HERMIONE  
+      </code></pre>
+    </p>
+    
+    <p>
+      So you can see that in this case map has returned a new array filled with what the code block returns each time it runs.
+    </p>
+    
+    
+   
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
+<footer>
+<div class="page-break"></div>
+  <!-- links to social media -->
+  <div class="social-media">
+  <a href="https://twitter.com/page_ajay"><img src="../imgs/entoni_twitterbird-48.png" alt="twitter link"></a>
+  <a href="https://github.com/ajpage"><img src="../imgs/entoni_github-48.png" alt="GitHub link"></a>
+  <a href="https://www.linkedin.com/in/alyssa-page-b7714781"><img src="../imgs/entoni_linkedin-48.png" alt="LinkedIn link"></a>
+  </div>
+  <h6>&copy; Alyssa Page 2016</h6>
+</footer>
+
+</body>
+</html>
