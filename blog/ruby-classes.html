@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Ruby Classes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+<header>
+  <!-- Site logo -->
+  <img src="../imgs/logo.png" alt="site logo">
+  <h1>JavaScript &amp; Donuts</h1>
+  <!-- Nav bar -->
+  <nav>
+    <ul>
+      <li id="home"><a href="#">Home</a></li>
+      <li id="portfolio"><a href="#">Portfolio</a></li>
+      <li id="resume"><a href="#">Resume</a></li>
+      <li id="blog"><a href="index.html">Blog</a></li>
+      <li id="contact"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Creating Classes <span>/ in Ruby</span></h1>
+  <h4>February 7, 2016</h4>
+  <h4>Alyssa Page</h4>
+
+  <section>
+    <p>
+    Classes in Ruby are a blue print for an object. Each time you call .new on a class a new instance of that class has been created. Creating and using classes allows you to create instances and share methods so that these all don't have to be defined each time. This is why each time you create an instance of an array class it has access to the array class methods.
+    Say you want to create a class dog (and why wouldn't you?) to be able to set and get information about different dogs. Since class names are constant they will be capitalized. We will create a Dog class that takes the arguments of breed and age.
+    <br>
+      <pre><code>
+      class Dog
+  
+      def initialize(breed, age)
+        @breed = breed
+        @age = age
+      end
+
+      end
+        
+      </code></pre>
+      <br>
+    Now each time a new instance of the class dog is created the initialize method will run and create instance variables @breed and @age that can be used throughout the class. You can distinguish instance variables by the @ symbol preceeding the name.
+    
+    </p>
+    <p>
+      Ok so we have a class that doesn't do much. If we want to get information we will need to use a getter method or even better use a reader attribute. Reader attributes only retrieve information and do not change anything about it. Setter methods and writer attributes can change information (like age if the dog is now a year older). The accessor attribute can both read and write. Since a dog's breed won't change it only needs a reader method but it's age will change with time so it will need a reader and a writer, so an accessor.
+    
+    <br>
+      <pre><code>
+      class Dog
+
+      attr_reader :breed
+      attr_accessor :age
+  
+      def initialize(breed, age)
+        @breed = breed
+        @age = age
+      end
+
+      def print_info
+        puts "--New Dog --"
+        puts "breed: #{:breed}"
+        puts "age: #{:age}"
+      end
+
+      end
+        
+      </code></pre>
+      <br>
+      I also added a method print_info that does just that! It prints out the information of the instance of the class. So now anytime you want to create a new object with breed and age information about a dog all you have to do is create an instance of a class. Let's try it out.
+      <br>
+      <pre><code>
+      charles_barkley = Dog.new("corgi", 7)
+      charles_barkley.print_info
+        returns -->
+          --New Dog--
+          breed: corgi
+          age: 7 
+      </code></pre>
+      <br>
+      </p>
+    
+    
+   
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
+<footer>
+<div class="page-break"></div>
+  <!-- links to social media -->
+  <div class="social-media">
+  <a href="https://twitter.com/page_ajay"><img src="../imgs/entoni_twitterbird-48.png" alt="twitter link"></a>
+  <a href="https://github.com/ajpage"><img src="../imgs/entoni_github-48.png" alt="GitHub link"></a>
+  <a href="https://www.linkedin.com/in/alyssa-page-b7714781"><img src="../imgs/entoni_linkedin-48.png" alt="LinkedIn link"></a>
+  </div>
+  <h6>&copy; Alyssa Page 2016</h6>
+</footer>
+
+</body>
+</html>
