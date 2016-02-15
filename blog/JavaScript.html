@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Ruby Hashes and JavaScript Objects</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+<header>
+  <!-- Site logo -->
+  <img src="../imgs/logo.png" alt="site logo">
+  <h1>JavaScript &amp; Donuts</h1>
+  <!-- Nav bar -->
+  <nav>
+    <ul>
+      <li id="home"><a href="#">Home</a></li>
+      <li id="portfolio"><a href="#">Portfolio</a></li>
+      <li id="resume"><a href="#">Resume</a></li>
+      <li id="blog"><a href="index.html">Blog</a></li>
+      <li id="contact"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Ruby vs JavaScript <span>/ Hashes and Objects</span></h1>
+  <h4>February 14, 2016</h4>
+  <h4>Alyssa Page</h4>
+
+  <section>
+    <p>
+    At first glance a Ruby Hash and a JavaScript Object appear to be almost identical. This is especially true if the Object is declared using the Object literal method and symbols are used as keys in Ruby. Let’s create one of each containing the same information to compare <br>
+      <pre><code>
+        #Ruby
+        dog  = {
+          name: “Lucy”,
+          age: 7,
+          breed: “Chihuahua”
+        }
+
+        #JavaScript
+        var dog  = {
+          name: “Lucy”,
+          age: 7,
+          breed: ” Chihuahua”
+        };    
+      </code></pre>
+      <br>
+    </p>
+
+    <p>
+    n first glance these look virtually identical and even accessing the information is similar. Let’s access the name information in each.
+    <br>
+      <pre><code>
+        #Ruby
+        dog[:name]    --> output Lucy
+
+        #JavaScript
+        dog.name    --> output Lucy 
+      </code></pre>
+      <br>
+      Ruby uses what are known as key, value pairs in a hash. A key can be any data type (ie strings, symbols, integer, etc) while in JavaScript it is just a property and can only be variables. In out Ruby example we used symbols as the keys. 
+    </p>
+    <p>
+    Both keys and properties can point to any type of object, strings, arrays, integers, etc., even other Hashes or Objects.  One difference is that JavaScript Objects can take functions as values so calling a property on an Object can be a function call.
+So if you are familiar with one, both or neither there are quite a few similarities between the two making easy to compare at times. 
+    </p>
+    
+   
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
+<footer>
+<div class="page-break"></div>
+  <!-- links to social media -->
+  <div class="social-media">
+  <a href="https://twitter.com/page_ajay"><img src="../imgs/entoni_twitterbird-48.png" alt="twitter link"></a>
+  <a href="https://github.com/ajpage"><img src="../imgs/entoni_github-48.png" alt="GitHub link"></a>
+  <a href="https://www.linkedin.com/in/alyssa-page-b7714781"><img src="../imgs/entoni_linkedin-48.png" alt="LinkedIn link"></a>
+  </div>
+  <h6>&copy; Alyssa Page 2016</h6>
+</footer>
+
+</body>
+</html>
