@@ -104,3 +104,22 @@ footer {
 	width: 100%;
 	background-color: #aeb0b4;
 }
+
+/* Projects */
+
+.project-image {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-color: #B0AEBF;
+    margin: 20px;
+}
+
+.left-link {
+	margin:20px;
+}
+
+.right-link {
+    margin: 20px;
+    margin-left: 90px;
+}
