@@ -1,3 +1,4 @@
+/* --- header --- */
 header {
 	background-image: url("../imgs/seamless-wood.jpg");
 	background-color: #dbdfe4;
@@ -30,7 +31,7 @@ a:link {
 }
 
 a:hover {
-	border-bottom: 1px solid aeb0b4;
+	border-bottom: 1px solid #aeb0b4;
 }
 
 a:visited {
@@ -85,7 +86,6 @@ section > h1 {
 }
 
 footer {
-	background-color: #dbdfe4;
 	width: 100%;
 	bottom: -10px;
 	border: 1px solid #dbdfe4;
