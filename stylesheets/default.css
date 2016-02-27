@@ -24,16 +24,22 @@ nav li {
 	padding-left: 15px;
 	font-size: 20px;
 }
+.blog-links:link {
+	color: black;
+	text-decoration: none;
+}
+
+.blog-links:visited {
+	color: black;
+	text-decoration: none;
+}
 
 a:link {
 	color: #f7f7f7;
 	text-decoration: none;
 }
 
-.blog-links {
-	color: black;
-	text-decoration: none;
-}
+
 
 a:hover {
 	border-bottom: 2px solid #FF6347;
@@ -41,10 +47,6 @@ a:hover {
 
 a:visited {
 	color: #f7f7f7;	
-}
-
-#home {
-	color: #ff9966;
 }
 
 ul {
