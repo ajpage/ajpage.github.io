@@ -141,9 +141,12 @@ footer {
 .project-image {
     max-width: 200px;
     max-height: 200px;
-    display: inline-block;
-    background-color: #B0AEBF;
     margin: 20px;
+}
+
+.project-block {
+	display: inline-block;
+	text-align: left;
 }
 
 .left-link {
