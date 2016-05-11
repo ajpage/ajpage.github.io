@@ -137,12 +137,16 @@ footer {
 }
 
 /* Projects */
+.resume-image {
+	border: 2px solid black;
+}
 
 .project-image {
     max-width: 200px;
     max-height: 200px;
     margin: 20px;
 }
+
 
 .project-block {
 	display: inline-block;
