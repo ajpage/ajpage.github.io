@@ -1,16 +1,31 @@
 /* --- header --- */
 header {
-	background-image: url("../imgs/seamless-wood.jpg");
-	background-color: #dbdfe4;
+	background-image: url("../imgs/new_year_background.png");
+	/*background-color: #dbdfe4;*/
 	margin: 0;
 	height: 10%;
 	width: 100%;
 }
 
-header > h1 {
-	font-size: 60px;
-	margin-left: 20%;
+.whatever {
+	width: 10.2em;
+	height: 10.2em;
+	margin: 5% ;
 	display: inline-block;
+}
+
+.header-square {	
+	display: inline-block;
+	width: 5em;
+	height: 5em;
+	background-color: #FF6347;
+}
+
+header > h1 {
+	font-size: 5em;
+	margin-left: 5%;
+	display: inline-block;
+	font-family: 'Poiret One', cursive;
 }
 
 header > img {
@@ -44,7 +59,7 @@ nav li {
 }
 
 a:link {
-	color: #f7f7f7;
+	color: #FF6347;
 	text-decoration: none;
 }
 
@@ -55,7 +70,7 @@ a:hover {
 }
 
 a:visited {
-	color: #f7f7f7;	
+	color: #FF6347;	
 }
 
 ul {
@@ -124,11 +139,14 @@ footer {
 /* Projects */
 
 .project-image {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    background-color: #B0AEBF;
+    max-width: 200px;
+    max-height: 200px;
     margin: 20px;
+}
+
+.project-block {
+	display: inline-block;
+	text-align: left;
 }
 
 .left-link {
