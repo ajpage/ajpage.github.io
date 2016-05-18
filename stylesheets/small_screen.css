@@ -1,0 +1,10 @@
+.navbar ul { 
+		margin-left: 0;
+		padding-left: 0;
+		width: 100%; 
+		text-align: center;
+	}
+
+.whatever { 
+	display: none; 
+}
