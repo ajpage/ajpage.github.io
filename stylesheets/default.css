@@ -14,6 +14,17 @@ header {
 	display: inline-block;
 }
 
+@media screen and (max-width: 600px) {
+	.whatever { display: none; }
+}
+
+@media screen and (max-width: 600px) {
+	.navbar ul { 
+		margin-left: 0;
+		padding-left: 0;
+		width: 100%; }
+}
+
 .header-square {	
 	display: inline-block;
 	width: 5em;
@@ -137,9 +148,7 @@ footer {
 }
 
 /* Projects */
-.resume-image {
-	border: 2px solid black;
-}
+
 
 .project-image {
     max-width: 200px;
